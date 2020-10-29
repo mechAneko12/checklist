@@ -17,7 +17,7 @@
 
 ## (2.2) **numpy 2d array X_new**
 
-> ```python:question2.py
+> ```python
 > X_new = np.concatenate((np.ones((X.shape[0],1)), X), axis=1)
 > ```
 
