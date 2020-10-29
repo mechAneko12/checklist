@@ -1,11 +1,26 @@
 ## 混同行列
-| TH | TH |
-| ---- | ---- |
-| TD | TD |
-| TD | TD |
+
 <table>
-<tr><td>№<td>色<td>値
-<tr><td>1<td bgcolor=white>white<td>#ffffff
-<tr><td>2<td bgcolor=black><font color=white>black<td>#000000
-<tr><td>3<td bgcolor=red><font color=white>red<td>#ff0000
+<tr>
+<th ></th>
+<th ></th>
+<th scope="col" colspan="2">予測した値</th>
+</tr>
+<tr>
+<th ></th>
+<th ></th>
+<th scope="col">Positive</th>
+<th scope="col">Negetive</th>
+</tr>
+<tr>
+<th rowspan="2">実際のクラス</th>
+<th scope="col">True</th>
+<td align="center" scope="col" bgcolor=#db4442>TP</td>
+<td align="center" scope="col" bgcolor=#43c1f7>TN</td>
+</tr>
+<tr>
+<th scope="col">False</th>
+<td align="center" scope="col" bgcolor=#43c1f7>FP</td>
+<td align="center" scope="col" bgcolor=#db4442>FN</td>
+</tr>
 </table>
