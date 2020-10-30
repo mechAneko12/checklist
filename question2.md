@@ -30,7 +30,7 @@
 >  - **ロジスティック回帰の関数**
 >  > ```python
 >  >  def  f(x, b):
->  >  return  1.0 / (1.0 + np.exp(-np.dot(x, b.T)))
+>  >    return  1.0 / (1.0 + np.exp(-np.dot(x, b.T)))
 >  > ```
 >  - **bは正規分布で生成**<br>
 > 正規分布はガウス関数$$f(x)=\frac{1}{\sqrt{2\pi\sigma^2}}> \textrm{exp}\biggl(-\frac{(x-\mu)^2}{2\sigma ^2} \biggr)$$
