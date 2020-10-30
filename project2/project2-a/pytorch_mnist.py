@@ -60,7 +60,7 @@ if __name__ == '__main__':
     net: torch.nn.Module = MyNet()
     loaders = load_MNIST()
 
-    loss_func = torch.nn.CrossEntropyLoss()
+    criterion = torch.nn.CrossEntropyLoss()
     optimizer = torch.optim.SGD(net.parameters(), lr=0.5)
 
     for e in range(epoch):
@@ -73,7 +73,7 @@ if __name__ == '__main__':
 
             optimizer.zero_grad()
             output = net(data)
-            loss = loss_func(output, target)
+            loss = criterion(output, target)
             loss.backward()
             optimizer.step()
 
