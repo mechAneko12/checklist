@@ -7,7 +7,7 @@
 >   　画像の劣化課程を知ったり事前学習したりする必要なく補完できる。
 > - **CNN** <br>
 >   ネットワークは、1)<span style = "color: Yellowgreen; ">ダウンサンプリング</span>, 2)<span style = "color: Gold; ">スキップコネクション</span>, 3)<span style = "color: red; ">アップサンプリング</span>の3つの部分から成り立っており(Fig 1)、最適化に平均二乗誤差を用いています。。超解像の際には、出力をダウンサンプリングしてから元画像と誤差関数で比較します。また、インペイントを解消する場合、バイナリマスクによって差分との要素積をとってから誤差関数に入力する。これにより書き込みのない部分だけで評価しています。
->   <div style="text-align: center;"><img src="img/Fig1.png" width=700><br clear="left">Figure 1: Deep Image Prior アーキテクチャの構造
+>   <div align="center"><img src="img/Fig1.png" width=700>Figure 1: Deep Image Prior アーキテクチャの構造
 ></div>
 >
 > - **実験結果の概要**
