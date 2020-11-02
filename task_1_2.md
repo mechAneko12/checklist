@@ -12,7 +12,7 @@
 >
 > - **実験結果の概要**
 >   - 超解像について、バイキュービック法と比較すると明らかに高解像度化に成功していることがわかった(Fig 2)。
->   <div style="text-align: center;"><img src="img/Fig2.png" width=700>Figure 2: バイキュービック法, Deep Image Priorの比較
+>   <div style="text-align: center;"><img src="img/Fig2.png" width=700><p>Figure 2: バイキュービック法, Deep Image Priorの比較</p>
 ></div>
 >
 >   - インペインティングについては、テキストを挿入した画像、ベルヌーイ分布によるマスクをした画像、白い巨大な抜け落ちのある画像を基にほかの手法との比較を行い、いずれも高い再現性を示している。
