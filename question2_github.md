@@ -33,7 +33,7 @@
 >  >    return  1.0 / (1.0 + np.exp(-np.dot(x, b.T)))
 >  > ```
 >  - **bは正規分布で生成**<br>
-> 正規分布はガウス関数$$f(x)=\frac{1}{\sqrt{2\pi\sigma^2}}> \textrm{exp}\biggl(-\frac{(x-\mu)^2}{2\sigma ^2} \biggr)$$
+> 正規分布はガウス関数<div align="center"><img src="https://latex.codecogs.com/gif.latex?f(x)=\frac{1}{\sqrt{2\pi\sigma^2}}>&space;\textrm{exp}\biggl(-\frac{(x-\mu)^2}{2\sigma&space;^2}&space;\biggr)"></div>
 > で与えられる。<img src="https://latex.codecogs.com/gif.latex?\mu">: 平均, <img src="https://latex.codecogs.com/gif.latex?\sigma^2">: 分散に従う
 
   
@@ -42,14 +42,13 @@
 
   
 
-> クラス<img src="https://latex.codecogs.com/gif.latex?i\in\{1,\cdots,n\}">について、$y=i,y\neq i$のニクラス分類としてとらえる。このとき$y=i$に対するy_predを$y=i$である確率として扱い、最大のy_predのクラスに分類する。
+> クラス<img src="https://latex.codecogs.com/gif.latex?i\in\{1,\cdots,n\}">について、<img src="https://latex.codecogs.com/gif.latex?y=i,y\neq i">のニクラス分類としてとらえる。このとき<img src="https://latex.codecogs.com/gif.latex?y=i">に対するy_predを<img src="https://latex.codecogs.com/gif.latex?y=i">である確率として扱い、最大のy_predのクラスに分類する。
 
   
 
 ## (4) 変数bの最適化
 
-> 交差エントロピー誤差関数
-> $$L=-\frac{1}{n}\sum_{i=1}^{n} \bigl\{y^{(i)}\textrm{log}f(x^{(i)})+(1-y^{(i)})\textrm{log}(1-f(x^{(i)}))\bigr\}$$
+> 交差エントロピー誤差関数<div align="center"><img src="https://latex.codecogs.com/gif.latex?L=-\frac{1}{n}\sum_{i=1}^{n}&space;\bigl\{y^{(i)}\textrm{log}f(x^{(i)})&plus;(1-y^{(i)})\textrm{log}(1-f(x^{(i)}))\bigr\}"></div>
 > を損失関数として用いる。また、最適化には勾配法などを使う。
 
 ## (5) 最適化の際の注意
