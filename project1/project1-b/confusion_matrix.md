@@ -26,11 +26,11 @@
 > その評価指標として、**Precision, Recall, F値, IoU**がある。
 > - **Precision**
 >   $$Precision=\frac{TP}{TP+FP}$$
->   Positiveを確認する指標として使われている。誤検知に対する強さを測ることが目的。
+>   適合率。Positiveを確認する指標として使われている。誤検知に対する強さを測ることが目的。
 >   <br><br>
 > - **Recall**
 >   $$Recall=\frac{TP}{TP+FN}$$
->   Trueの見逃しに対する強さの指標。
+>   再現値。Trueの見逃しに対する強さの指標。
 >   <br><br>
 > - **F値**
 >   $$F=\frac{TP}{TP+\frac{1}{2}(FP+FN)}$$

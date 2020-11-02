@@ -4,8 +4,6 @@ Google Colaboratoryで実行しました。
 !pip install pycodestyle flake8 pycodestyle_magic
 %load_ext pycodestyle_magic
 
-
-
 # %%flake8
 # % matplotlib inline
 
@@ -17,7 +15,6 @@ import torchvision.transforms as transforms
 from torch.utils.data import DataLoader
 from torchvision import datasets
 import torch.nn.functional as F
-
 
 
 class MyNet(torch.nn.Module):
@@ -40,17 +37,18 @@ class MyNet(torch.nn.Module):
         """
 
     def forward(self, x):
-        #x = self.drop(x)
+        # x = self.drop(x)
         x = F.relu(self.conv1(x))
         x = self.pool(x)
-        x = self.drop(x)
+        # x = self.drop(x)
         x = F.relu(self.conv2(x))
         x = self.pool(x)
-        #x = self.drop(x)
-        #x = F.relu(self.conv3(x))
-        #x = self.pool(x)
+        # x = self.drop(x)
+        # x = F.relu(self.conv3(x))
+        # x = self.pool(x)
         x = x.view(-1, 16 * 5 * 5)
         x = self.fc1(x)
+        x = self.drop(x)
         x = F.relu(self.fc2(x))
         x = self.fc3(x)
         return x
@@ -58,22 +56,34 @@ class MyNet(torch.nn.Module):
 
 def load_MNIST(batch=100):
     transform = transforms.Compose([transforms.ToTensor(),
-                                    transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))])
+                                    transforms.Normalize((0.5, 0.5, 0.5),
+                                    (0.5, 0.5, 0.5))])
 
-    train_set = torchvision.datasets.CIFAR10(root='./data', train=True,
-                                            download=True, transform=transform)
-    train_loader = torch.utils.data.DataLoader(train_set, batch_size=batch,
-                                            shuffle=True, num_workers=2)
+    train_set = torchvision.datasets.CIFAR10(root='./data',
+                                             train=True,
+                                             download=True,
+                                             transform=transform)
+    train_loader = torch.utils.data.DataLoader(train_set,
+                                               batch_size=batch,
+                                               shuffle=True,
+                                               num_workers=2)
 
-    test_set = torchvision.datasets.CIFAR10(root='./data', train=False,
-                                        download=True, transform=transform)
-    test_loader = torch.utils.data.DataLoader(test_set, batch_size=batch,
-                                            shuffle=False, num_workers=2)
+    test_set = torchvision.datasets.CIFAR10(root='./data',
+                                            train=False,
+                                            download=True,
+                                            transform=transform)
+    test_loader = torch.utils.data.DataLoader(test_set,
+                                              batch_size=batch,
+                                              shuffle=False,
+                                              num_workers=2)
 
     classes = ('plane', 'car', 'bird', 'cat',
-            'deer', 'dog', 'frog', 'horse', 'ship', 'truck')
+               'deer', 'dog', 'frog', 'horse', 'ship', 'truck')
 
-    return {'train_data': train_loader, 'test_data': test_loader, 'classes': classes}
+    return {'train_data': train_loader,
+            'test_data': test_loader,
+            'classes': classes}
+
 
 def evaluation(m):
     tp = np.empty((0))
@@ -111,13 +121,14 @@ if __name__ == '__main__':
                 pred = output.argmax(dim=1, keepdim=True)
                 correct_train = pred.eq(target.view_as(pred)).sum().numpy()
                 total_train = target.size(0)
-                print('{}epoch, Train Loss:{}, Train Accuracy:{}'.format(e+1,
-                                                                         loss.item(),
-                                                                         correct_train/total_train))
+                acc = correct_train/total_train
+                print('{}epoch, Loss:{}, acc:{}'.format(e+1,
+                                                        loss.item(),
+                                                        acc))
         """test(accuracy)"""
         # net.eval()
         net.train(False)
-        
+
         matrix = np.zeros((10, 10), float)
         with torch.no_grad():
             for data, target in loaders['test_data']:
