@@ -16,7 +16,7 @@
 >   </div><br>
 >
 >   - インペインティングについては、テキストを挿入した画像、ベルヌーイ分布によるマスクをした画像、白い巨大な抜け落ちのある画像を基にほかの手法との比較を行い、いずれも高い再現性を示している。
->   - "natural pre-image"という、ネットワークを反転させて出力する値を指標とすることで、ネットワークがどのようなアクティベーションをしているのかという情報を理解する手法がある。これによってL1正規化を取り入れたTV norm prior、学習済みのネットワーク、Deep Image Priorの3つを比較し、Deep Image Priorの優位性を示した。
+>   - "natural pre-image"という、ネットワークを反転させて出力する値を指標とすることで、ネットワークがどのようなアクティベーションをしているのかという情報を理解する手法がある。これによってL1正則化を取り入れたTV norm prior、学習済みのネットワーク、Deep Image Priorの3つを比較し、Deep Image Priorの優位性を示した。
 >   ###### <div align="center"><img src="img/Fig3.png" width=700><br clear="left">Figure 3:AlexNetの各層を反転して、Deep Image Prior, TV prior, 学習済みの反転ネットワークのnatural pre-imageの比較
 >   </div><br>
 >
