@@ -47,3 +47,14 @@
 >   | <img src="img/yeji_0.jpg" height=300>| <img src="img/yeji_inpaint.jpg" height=300>| <img src="img/yeji_inpaint_prior.jpg" height=300> |
 >   |:---:|:---:|:---:|
 >   |original image| painted | inpainting |
+>
+> - 失敗
+>   | <img src="img/yeji_0.jpg" height=300>| <img src="img/yeji_noise0.jpg" height=300>| <img src="img/yeji_noise0_prior.jpg" height=300> |
+>   |:---:|:---:|:---:|
+>   |original image| gaussian noise | denoise |
+>   |変数の変化が小さく、Redが少なくなってしまっている|||
+>
+>   | <img src="img/yeji_0.jpg" height=300>| <img src="img/yeji_inpaint0.jpg" height=300>| <img src="img/yeji_inpaint0_prior.jpg" height=300> |
+>   |:---:|:---:|:---:|
+>   |original image| painted | inpainting |
+>   |ネットワークの最後がleakyReLUだったので、白く飛んでいる|||
