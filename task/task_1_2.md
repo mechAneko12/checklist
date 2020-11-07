@@ -36,7 +36,13 @@
 
 > - # ***実装*** <br>
 >   ###### <div align="center">
->   | ![](img/yeji_0.jpg)| ![](img/yeji_noise.jpg)| ![](img/yeji_noise_prior.jpg) |
+>   | <img src="img/yeji_0.jpg" height=300>| <img src="img/yeji_noise.jpg" height=300>| <img src="img/yeji_noise_prior.jpg" height=300> |
+>   |:---:|:---:|:---:|
+>   |original image| before denoise | denoise |
+>   </div> <br>
+>
+>   ###### <div align="center">
+>   | <img src="img/yeji_0.jpg" height=300>| <img src="img/yeji_noise.jpg" height=300>| <img src="img/yeji_noise_prior.jpg" height=300> |
 >   |:---:|:---:|:---:|
 >   |original image| before denoise | denoise |
 >   </div> <br>
