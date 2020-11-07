@@ -37,12 +37,12 @@
 > # ***実装*** <br>
 >   | <img src="img/yeji_0.jpg" height=300>| <img src="img/yeji_noise.jpg" height=300>| <img src="img/yeji_noise_prior.jpg" height=300> |
 >   |:---:|:---:|:---:|
->   |original image| before denoise | denoise |
+>   |original image| gaussian noise | denoise |
 >
 >   | <img src="img/yeji_0.jpg" height=300>| <img src="img/yeji_mosaic0.jpg" height=300>| <img src="img/yeji_mosaic0_prior.jpg" height=300> |
 >   |:---:|:---:|:---:|
->   |original image| before super resolution | super resolution |
+>   |original image| smoothing | super resolution |
 >
 >   | <img src="img/yeji_0.jpg" height=300>| <img src="img/yeji_inpaint.jpg" height=300>| <img src="img/yeji_inpaint_prior.jpg" height=300> |
 >   |:---:|:---:|:---:|
->   |original image| before inpainting | inpainting |
+>   |original image| painted | inpainting |
