@@ -35,11 +35,11 @@
 >   - 一般的な誤算関数の平均二乗誤差を用いていますが、どうしてそれを使っているのか根拠が少し気になりました（ほかの関数との比較などをした結果なのかどうか）。 
 
 > - # ***実装*** <br>
-> ###### <div align="center"><li style="display: inline-block;"><img src="img/yeji_0.jpg" height=200><br clear="left">original image</li> <li style="display: inline-block;"><img src="img/yeji_noise.jpg" height=200><br clear="left">before denoise</li> <li style="display: inline-block;"><img src="img/yeji_noise_prior.jpg" height=200><br clear="left">denoise</li> 
+> ###### <div align="center"><div style="display: inline-block;"><img src="img/yeji_0.jpg" height=300><br clear="left">original image</div> <div style="display: inline-block;"><img src="img/yeji_noise.jpg" height=300><br clear="left">before denoise</div> <div style="display: inline-block;"><img src="img/yeji_noise_prior.jpg" height=300><br clear="left">denoise</div> 
 > </div> <br>
 >
-> ###### <div align="center"><li style="display: inline-block;"><img src="img/yeji_0.jpg" height=200><br clear="left">original image</li> <li style="display: inline-block;"><img src="img/yeji_mosaic0.jpg" height=200><br clear="left">before super resolution</li> <li style="display: inline-block;"><img src="img/yeji_mosaic0_prior.jpg" height=200><br clear="left">super resolution</li> 
+> ###### <div align="center"><li style="display: inline-block;"><img src="img/yeji_0.jpg" height=300><br clear="left">original image</li> <li style="display: inline-block;"><img src="img/yeji_mosaic0.jpg" height=300><br clear="left">before super resolution</li> <li style="display: inline-block;"><img src="img/yeji_mosaic0_prior.jpg" height=300><br clear="left">super resolution</li> 
 ></div><br>
 >
-> ###### <div align="center"><li style="display: inline-block;"><img src="img/yeji_0.jpg" height=200><br clear="left">original image</li> <li style="display: inline-block;"><img src="img/yeji_inpaint.jpg" height=200><br clear="left">painted</li> <li style="display: inline-block;"><img src="img/yeji_inpaint_prior.jpg" height=200><br clear="left">inpainting</li> 
+> ###### <div align="center"><li style="display: inline-block;"><img src="img/yeji_0.jpg" height=300><br clear="left">original image</li> <li style="display: inline-block;"><img src="img/yeji_inpaint.jpg" height=300><br clear="left">painted</li> <li style="display: inline-block;"><img src="img/yeji_inpaint_prior.jpg" height=300><br clear="left">inpainting</li> 
 ></div><br>
