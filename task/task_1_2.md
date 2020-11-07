@@ -35,20 +35,14 @@
 >   - 一般的な誤算関数の平均二乗誤差を用いていますが、どうしてそれを使っているのか根拠が少し気になりました（ほかの関数との比較などをした結果なのかどうか）。 
 
 > - # ***実装*** <br>
->   ###### <div text-align="center">
 >   | <img src="img/yeji_0.jpg" height=300>| <img src="img/yeji_noise.jpg" height=300>| <img src="img/yeji_noise_prior.jpg" height=300> |
 >   |:---:|:---:|:---:|
 >   |original image| before denoise | denoise |
->   </div> <br>
 >
->   ###### <div align="center">
 >   | <img src="img/yeji_0.jpg" height=300>| <img src="img/yeji_mosaic0.jpg" height=300>| <img src="img/yeji_mosaic0_prior.jpg" height=300> |
 >   |:---:|:---:|:---:|
 >   |original image| before denoise | denoise |
->   </div> <br>
 >
->   ###### <div align="center">
 >   | <img src="img/yeji_0.jpg" height=300>| <img src="img/yeji_inpaint.jpg" height=300>| <img src="img/yeji_inpaint_prior.jpg" height=300> |
 >   |:---:|:---:|:---:|
 >   |original image| before denoise | denoise |
->   </div> <br>
