@@ -38,23 +38,23 @@
 > - pytorchで各モジュール5つ分のネットワークを作って、デノイズ、超解像、インペインティングを行いました。
 >   |original image| gaussian noise | denoise |
 >   |:---:|:---:|:---:|
->   | <img src="img/yeji_0.jpg" height=300>| <img src="img/yeji_noise.jpg" height=300>| <img src="img/yeji_noise_prior.jpg" height=300> |
+>   | <img src="img/yeji_0.jpg" height=400>| <img src="img/yeji_noise.jpg" height=400>| <img src="img/yeji_noise_prior.jpg" height=400> |
 >
 >   |original image| smoothing | super resolution |
 >   |:---:|:---:|:---:|
->   | <img src="img/yeji_0.jpg" height=300>| <img src="img/yeji_mosaic0.jpg" height=300>| <img src="img/yeji_mosaic0_prior.jpg" height=300> |
+>   | <img src="img/yeji_0.jpg" height=400>| <img src="img/yeji_mosaic0.jpg" height=400>| <img src="img/yeji_mosaic0_prior.jpg" height=400> |
 >
 >   |original image| painted | inpainting |
 >   |:---:|:---:|:---:|
->   | <img src="img/yeji_0.jpg" height=300>| <img src="img/yeji_inpaint.jpg" height=300>| <img src="img/yeji_inpaint_prior.jpg" height=300> |
+>   | <img src="img/yeji_0.jpg" height=400>| <img src="img/yeji_inpaint.jpg" height=400>| <img src="img/yeji_inpaint_prior.jpg" height=400> |
 >
 > - 失敗
 >   |original image| gaussian noise | denoise |
 >   |:---:|:---:|:---:|
->   | <img src="img/yeji_0.jpg" height=300>| <img src="img/yeji_noise0.jpg" height=300>| <img src="img/yeji_noise0_prior.jpg" height=300> |
+>   | <img src="img/yeji_0.jpg" height=400>| <img src="img/yeji_noise0.jpg" height=400>| <img src="img/yeji_noise0_prior.jpg" height=400> |
 >   |||変数の変化が小さく、<br>Redが少なくなって<br>しまっている|
 >
 >   |original image| painted | inpainting |
 >   |:---:|:---:|:---:|
->   | <img src="img/yeji_0.jpg" height=300>| <img src="img/yeji_inpaint0.jpg" height=300>| <img src="img/yeji_inpaint0_prior.jpg" height=300> |
+>   | <img src="img/yeji_0.jpg" height=400>| <img src="img/yeji_inpaint0.jpg" height=400>| <img src="img/yeji_inpaint0_prior.jpg" height=400> |
 >   |||ネットワークの最後が<br>leakyReLUだったので、<br>白く飛んでいる|
