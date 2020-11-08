@@ -36,25 +36,25 @@
 
 > # ***実装*** <br>
 > - pytorchで各モジュール5つ分のネットワークを作って、デノイズ、超解像、インペインティングを行いました。
->   | <img src="img/yeji_0.jpg" height=300>| <img src="img/yeji_noise.jpg" height=300>| <img src="img/yeji_noise_prior.jpg" height=300> |
->   |:---:|:---:|:---:|
 >   |original image| gaussian noise | denoise |
->
->   | <img src="img/yeji_0.jpg" height=300>| <img src="img/yeji_mosaic0.jpg" height=300>| <img src="img/yeji_mosaic0_prior.jpg" height=300> |
 >   |:---:|:---:|:---:|
+>   | <img src="img/yeji_0.jpg" height=300>| <img src="img/yeji_noise.jpg" height=300>| <img src="img/yeji_noise_prior.jpg" height=300> |
+>
 >   |original image| smoothing | super resolution |
->
->   | <img src="img/yeji_0.jpg" height=300>| <img src="img/yeji_inpaint.jpg" height=300>| <img src="img/yeji_inpaint_prior.jpg" height=300> |
 >   |:---:|:---:|:---:|
+>   | <img src="img/yeji_0.jpg" height=300>| <img src="img/yeji_mosaic0.jpg" height=300>| <img src="img/yeji_mosaic0_prior.jpg" height=300> |
+>
 >   |original image| painted | inpainting |
+>   |:---:|:---:|:---:|
+>   | <img src="img/yeji_0.jpg" height=300>| <img src="img/yeji_inpaint.jpg" height=300>| <img src="img/yeji_inpaint_prior.jpg" height=300> |
 >
 > - 失敗
->   | <img src="img/yeji_0.jpg" height=300>| <img src="img/yeji_noise0.jpg" height=300>| <img src="img/yeji_noise0_prior.jpg" height=300> |
->   |:---:|:---:|:---:|
 >   |original image| gaussian noise | denoise |
+>   |:---:|:---:|:---:|
+>   | <img src="img/yeji_0.jpg" height=300>| <img src="img/yeji_noise0.jpg" height=300>| <img src="img/yeji_noise0_prior.jpg" height=300> |
 >   |||変数の変化が小さく、<br>Redが少なくなって<br>しまっている|
 >
->   | <img src="img/yeji_0.jpg" height=300>| <img src="img/yeji_inpaint0.jpg" height=300>| <img src="img/yeji_inpaint0_prior.jpg" height=300> |
->   |:---:|:---:|:---:|
 >   |original image| painted | inpainting |
+>   |:---:|:---:|:---:|
+>   | <img src="img/yeji_0.jpg" height=300>| <img src="img/yeji_inpaint0.jpg" height=300>| <img src="img/yeji_inpaint0_prior.jpg" height=300> |
 >   |||ネットワークの最後が<br>leakyReLUだったので、<br>白く飛んでいる|
